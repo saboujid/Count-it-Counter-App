@@ -1,0 +1,98 @@
+* {
+    font-family: 'poppins';
+}
+
+body {
+  background-image: radial-gradient(
+    circle 860px at 11.8% 33.5%,
+    rgb(240, 30, 65) 0%,
+    rgba(244, 49, 74, 1) 30.5%,
+    rgba(249, 75, 37, 1) 56.1%,
+    rgba(250, 88, 19, 1) 75.6%,
+    rgba(253, 102, 2, 1) 100.2%
+  );
+}
+
+#container {
+  height: 350px;
+  width: 350px;
+  border-radius: 30%;
+  margin: 50px auto;
+  background: linear-gradient(240deg, #e94513, #ac0000);
+  font-size: 500%;
+  text-align: center;
+  color: white;
+}
+
+#content {
+  padding-top: 10%;
+}
+
+h1 {
+  text-align: center;
+  font-size: 100px;
+  line-height: 80px;
+  color:transparent;
+  -webkit-text-stroke: 1px #fff;
+  background: url(./back.png);
+  -webkit-background-clip: text;
+  background-position: 0 0;
+  animation: back 20s linear infinite;
+}
+
+@keyframes back{
+    100%{
+        background-position: 2000px 0;
+    }
+}
+
+#number {
+  height: 25px;
+  width: 250px;
+  margin: 50px auto;
+}
+
+#increment {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+}
+
+#decrement {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  border: 1px solid white;
+  background-color: transparent;
+  color: white;
+}
+
+#increment:hover {
+  background-color: rgb(212, 76, 52);
+  transition-duration: 0.4s;
+}
+
+#decrement:hover {
+  background-color: rgb(218, 57, 29);
+  transition-duration: 0.4s;
+}
+
+.credits{
+  margin-left: 85% ;
+  margin-top: -3%;
+  color: white;
+  font-weight: 400;
+}
+
+.credits a{
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.credits a:hover{
+  color: darkred;
+}
